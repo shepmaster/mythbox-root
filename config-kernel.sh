@@ -75,6 +75,15 @@ CONFIG_KVM_AMD=m
 
 # Misc. hardware
 CONFIG_SENSORS_K8TEMP=m
+
+# Support for software
+## udev
+CONFIG_FHANDLE=y
+## libvirt
+CONFIG_DM_SNAPSHOT=y
+CONFIG_DM_MULTIPATH=y
+CONFIG_MACVTAP=y
+
 EOF
 make olddefconfig
 
